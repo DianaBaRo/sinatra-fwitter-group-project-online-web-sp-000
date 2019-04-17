@@ -21,13 +21,7 @@ class TweetsController < ApplicationController
     end
   end
 
-  get '/tweets/show' do
-    if !is_logged_in?
-      redirect '/login'
-    else
-      erb :'tweets/show_tweet'
-    end
-  end
+
 
   post '/tweets' do
     if logged_in?
