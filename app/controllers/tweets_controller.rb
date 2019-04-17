@@ -21,8 +21,6 @@ class TweetsController < ApplicationController
     end
   end
 
-
-
   post '/tweets' do
     if logged_in?
       if params[:content] == ""
